@@ -2,7 +2,7 @@
 
 This is the code base for backend server for the project EnergyApp
 
-**More informations about EnergyApp is given [here][EnergyAppManuals.md]**
+**[Read more about EnergyApp here](EnergyAppManuals.md)**
 
 ### **Required applications**
 
@@ -12,7 +12,7 @@ This is the code base for backend server for the project EnergyApp
 
 ### **Run the MySQL server**
 
-1.  Install Docker (Learn more about docker installation [here](https://docs.docker.com/install/))
+1.  Install Docker (Learn more about docker installation [here]:(https://docs.docker.com/install/))
 2.  Enter on the project root directory 
 3.  Run the docker `docker-compose up -d`
 
