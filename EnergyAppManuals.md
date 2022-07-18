@@ -18,7 +18,7 @@
 * Amazon Route 53 to get a domain name(like app.ptcenergy.com)
 * AWS CloudFormation will be integrated with the CICD tool to automate the service deployment to cloud
 
-EnergyApp High Level Architecture: ![Alt](https://drive.google.com/file/d/1wFznP5SKDhwECNAiu-ecLac852pbBBmr/view?usp=sharing "EnergyApp High Level Architecture")
+EnergyApp High Level Architecture: ![alt](https://drive.google.com/file/d/1wFznP5SKDhwECNAiu-ecLac852pbBBmr/view?usp=sharing "EnergyApp High Level Architecture")
 
 ### **EnergyApp Cost estimation**
 **This is an approximate cost estimation. We can get a better cost estimation only after load testing the application**
