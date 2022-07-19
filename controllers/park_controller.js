@@ -64,10 +64,10 @@ exports.updateParkById = (req, res, next) => {
 }
 
 //Get park details of the id
-exports.getParkDetailsById = (req, res, next) => {
+exports.getParkDetailsById = async (req, res, next) => {
 
     const $userId = req.query.id;
-    userObj.findAll({
+    await userObj.findAll({
         where: {id: $userId}
     }).catch(err => {
         console.log(`Error: ${err.message}`);
@@ -86,7 +86,6 @@ exports.getParkDetailsById = (req, res, next) => {
                 }
             });
         } else {
-
             res.status(200).send({
                 message: `Park Details fetched successfully`,
                 park: resu
@@ -96,7 +95,7 @@ exports.getParkDetailsById = (req, res, next) => {
 }
 
 //Get Park details by energy type
-exports.getParkDetailsByQueryParams = (req, res, next) => {
+exports.getParkDetailsByQueryParams = async (req, res, next) => {
 
     const $energyType = req.query.energyType;
     const $timezone = req.query.timezone;
@@ -108,7 +107,7 @@ exports.getParkDetailsByQueryParams = (req, res, next) => {
         queryParams["timezone"] = $timezone
     }
     
-    userObj.findAndCountAll({
+    await userObj.findAndCountAll({
         where: queryParams
     }).catch(err => {
         console.log(`Error: ${err.message}`);

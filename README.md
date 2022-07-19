@@ -34,6 +34,8 @@ Running Nodejs server
 
 3. Now let’s run the app by running the following command : `node server.js`.
 
+4. To run unit tests : `node test`.
+
 Tips:
 
 After testing you can stop docker by `docker stop mysql_server phpmyadmin`
