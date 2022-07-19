@@ -63,8 +63,9 @@ You will get an `AuthToken` when you login. Use the token in header of api call 
 
 ### **EnergyApp Improvements**
 * Currently the file upload is done to local folder(tmp). This need to moved to AWS S3 after creating a S3 bucket.
-* Create more unit and integration test cases.
+* Create more unit and integration test cases. 
 * Create the AWS resouces mentioned above and then create the CloudFormation script to automate the deployment
+* Set up monitoring and alerting in AWS so as to understand the deployed service in more detail and get alerted in case of any issues.
 * Move the Authentication and Authorization to different microservice service. The number of requests will be less and we can scale that service accrodingly
 * Create different accessMode in users so as to restrict/grant access to different services for different users/companies
 * Move the db secrets from config file to AWS Secret Manager
