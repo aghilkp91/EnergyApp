@@ -36,7 +36,7 @@ EnergyApp High Level Architecture: ![image](https://drive.google.com/uc?export=v
 There is an option of using lambda instead of Fargate for service endpoints. But the cost would increase as follows when we have more api calls per month
 | Service | 100,000,000 request/month | 1,000,000,000 request/month
 |---|---|---|
-| AWS Fargate | 30ms/req and 1024 mb ram - $83 | 30ms/req and 1024 mb ram - $694 |
+| AWS Lambda | 30ms/req and 1024 mb ram - $83 | 30ms/req and 1024 mb ram - $694 |
 
 ### **EnergyApp Rest CRUD API overview**
 
